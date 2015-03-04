@@ -14,6 +14,10 @@
 		8E3AD7A61AA412F600272D9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E3AD7A51AA412F600272D9C /* Images.xcassets */; };
 		8E3AD7A91AA412F600272D9C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E3AD7A71AA412F600272D9C /* LaunchScreen.xib */; };
 		8E3AD7B51AA412F700272D9C /* TestCrashMailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3AD7B41AA412F700272D9C /* TestCrashMailTests.m */; };
+		8E3AD7BF1AA44BC800272D9C /* rootJSON.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 8E3AD7BE1AA44BC800272D9C /* rootJSON.geojson */; };
+		8E3AD7C11AA456F600272D9C /* json.js in Resources */ = {isa = PBXBuildFile; fileRef = 8E3AD7C01AA456F600272D9C /* json.js */; };
+		8ED31D241AA58A9A004E584F /* learn.js in Resources */ = {isa = PBXBuildFile; fileRef = 8ED31D231AA58A9A004E584F /* learn.js */; };
+		8ED31D271AA5AA5D004E584F /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED31D261AA5AA5D004E584F /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,11 @@
 		8E3AD7AE1AA412F700272D9C /* TestCrashMailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCrashMailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E3AD7B31AA412F700272D9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E3AD7B41AA412F700272D9C /* TestCrashMailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCrashMailTests.m; sourceTree = "<group>"; };
+		8E3AD7BE1AA44BC800272D9C /* rootJSON.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rootJSON.geojson; sourceTree = "<group>"; };
+		8E3AD7C01AA456F600272D9C /* json.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = json.js; sourceTree = "<group>"; };
+		8ED31D231AA58A9A004E584F /* learn.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = learn.js; sourceTree = "<group>"; };
+		8ED31D251AA5AA5D004E584F /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		8ED31D261AA5AA5D004E584F /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +92,13 @@
 			children = (
 				8E3AD79C1AA412F600272D9C /* AppDelegate.h */,
 				8E3AD79D1AA412F600272D9C /* AppDelegate.m */,
+				8E3AD7C01AA456F600272D9C /* json.js */,
+				8ED31D231AA58A9A004E584F /* learn.js */,
+				8E3AD7BE1AA44BC800272D9C /* rootJSON.geojson */,
 				8E3AD79F1AA412F600272D9C /* ViewController.h */,
 				8E3AD7A01AA412F600272D9C /* ViewController.m */,
+				8ED31D251AA5AA5D004E584F /* WebViewController.h */,
+				8ED31D261AA5AA5D004E584F /* WebViewController.m */,
 				8E3AD7A21AA412F600272D9C /* Main.storyboard */,
 				8E3AD7A51AA412F600272D9C /* Images.xcassets */,
 				8E3AD7A71AA412F600272D9C /* LaunchScreen.xib */,
@@ -168,6 +182,7 @@
 				TargetAttributes = {
 					8E3AD7941AA412F600272D9C = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = BSENLVR4AV;
 					};
 					8E3AD7AD1AA412F700272D9C = {
 						CreatedOnToolsVersion = 6.1;
@@ -200,8 +215,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E3AD7A41AA412F600272D9C /* Main.storyboard in Resources */,
+				8E3AD7BF1AA44BC800272D9C /* rootJSON.geojson in Resources */,
 				8E3AD7A91AA412F600272D9C /* LaunchScreen.xib in Resources */,
 				8E3AD7A61AA412F600272D9C /* Images.xcassets in Resources */,
+				8E3AD7C11AA456F600272D9C /* json.js in Resources */,
+				8ED31D241AA58A9A004E584F /* learn.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +240,7 @@
 				8E3AD7A11AA412F600272D9C /* ViewController.m in Sources */,
 				8E3AD79E1AA412F600272D9C /* AppDelegate.m in Sources */,
 				8E3AD79B1AA412F600272D9C /* main.m in Sources */,
+				8ED31D271AA5AA5D004E584F /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +299,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -321,7 +341,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -343,7 +364,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestCrashMail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +376,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestCrashMail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +437,7 @@
 				8E3AD7BA1AA412F700272D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E3AD7BB1AA412F700272D9C /* Build configuration list for PBXNativeTarget "TestCrashMailTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +446,7 @@
 				8E3AD7BD1AA412F700272D9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
